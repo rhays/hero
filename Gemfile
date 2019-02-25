@@ -21,3 +21,4 @@ group :development do
   gem 'spring'
 end
 
+gem 'faker', '~> 1.9', '>= 1.9.3'

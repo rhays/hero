@@ -1,9 +1,20 @@
 <div class="panel panel-default">
-    <div class="panel-heading">
-        <h3 class="panel-title"><%= link_to 'Click Here To Generate A New Superhero', root_path %></h3>
-    </div>
-    <div class="panel-body">
-        INDEX PAGE
-    </div>
-    <div class="panel-footer"><%= link_to 'Create A Whole Superhero Team', home_team_path %></div>
+  <div class="panel-heading">
+    <h3 class="panel-title"><%= link_to 'Click Here To Generate A New Superhero', root_path %></h3>
+  </div>
+  <div class="panel-body">
+    <img src="<%= @hero_avatar %>" alt="Hero Avatar" /><br/><br/>
+
+    Your Superhero Name:<br/>
+    <%= @hero_fullname %><br/>
+    Your Superhero Power:<br/>
+    <%= @hero_power %><br/><br/>
+
+    Your Undercover Day Job is:<br/>
+    <%= @hero_profession %><br/><br/>
+
+    Your Corporate Superpower is:<br/>
+    <%= @hero_company_bs %><br/>
+  </div>
+  <div class="panel-footer"><%= link_to 'Create A Whole Superhero Team', home_team_path %></div>
 </div>
